@@ -93,6 +93,8 @@ html {
   border-bottom: 1px solid rgba(255, 255, 255, 0.7);
   border-right: none;
   appearance: none;
+  padding-bottom: 3px;
+  padding-top: 1px;
 }
 
 .search-form__textfield::placeholder {
@@ -106,7 +108,7 @@ html {
 .search-form__checkbox-list {
   display: flex;
   gap: 15px;
-  margin-bottom: 2px;
+  margin-bottom: 6px;
 }
 
 .search-form__label {
@@ -116,7 +118,7 @@ html {
   gap: 5px;
   cursor: pointer;
   padding-top: 4px;
-  padding-bottom: 3px;
+  padding-bottom: 6px;
 }
 .search-form__pseudo-checkbox {
   margin: 1px;
