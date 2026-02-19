@@ -92,7 +92,7 @@ html {
   border-bottom: 1px solid rgba(255, 255, 255, 0.7);
   border-right: none;
   appearance: none;
-  padding-bottom: 3px;
+  padding-bottom: 2px;
   padding-top: 1px;
 }
 
@@ -106,7 +106,7 @@ html {
 
 .search-form__checkbox-list {
   display: flex;
-  gap: 15px;
+  gap: 14px;
   margin-bottom: 6px;
 }
 
@@ -116,8 +116,8 @@ html {
   width: fit-content;
   gap: 5px;
   cursor: pointer;
-  padding-top: 4px;
-  padding-bottom: 6px;
+  padding-top: 5px;
+  padding-bottom: 2px;
 }
 .search-form__pseudo-checkbox {
   margin: 1px;
