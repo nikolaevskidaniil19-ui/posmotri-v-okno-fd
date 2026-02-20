@@ -48,9 +48,6 @@ html {
 }
 
 /* 3. плеер и форма  */
-.result {
-}
-
 .result__video-container {
   width: 711px;
   height: 386px;
@@ -137,11 +134,10 @@ html {
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   opacity: 1;
 }
-.search-form__label-text.search-form__label:hover .search-form__label-text {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
 }
-.search-form__label:has(input[type="checkbox"]:focus-visible)
-  .search-form__pseudo-checkbox {
+.search-form__label:has(input[type="checkbox"]:focus-visible) {
   outline: 2px solid #000000;
   outline-offset: 2px;
 }
@@ -152,7 +148,6 @@ html {
 /* 4. правая секция   */
 .content__details {
   flex-grow: 1;
-  height: 534px;
 }
 
 .title {
@@ -168,7 +163,7 @@ html {
 }
 
 .content__list-container {
-  height: 298px;
+  max-height: 298px;
   overflow-y: auto;
   position: relative;
 }
@@ -190,10 +185,10 @@ html {
   color: #ffffff;
 }
 .content__card-link:active {
-  background-color: #545454;
+  background: rgba(84, 80, 80, 1);
 }
 .content__card-link_current {
-  background-color: rgba(255, 255, 255, 0.2);
+  background: rgba(84, 80, 80, 1);
 }
 .content__card-link:hover {
   text-decoration: underline;
@@ -216,6 +211,7 @@ html {
 
 .content__video-card-title {
   display: block;
+  max-width: 196px;
   margin-bottom: 6px;
   font-family: "Oswald", sans-serif;
   font-weight: 700;
@@ -238,6 +234,7 @@ html {
   height: 103px;
   object-fit: cover;
   object-position: center;
+  flex-shrink: 0;
 }
 .more-button {
   margin-top: 30px;
@@ -259,7 +256,7 @@ html {
   text-decoration: underline;
 }
 .button:active {
-  background-color: rgba(255, 255, 255, 0.5);
+  background: rgba(84, 80, 80, 1);
 }
 .button:focus-visible {
   outline: 2px solid #ffffff;
